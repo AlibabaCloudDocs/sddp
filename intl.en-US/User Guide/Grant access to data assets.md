@@ -22,13 +22,13 @@ SDDP can access and scan specific data assets in other Alibaba Cloud services fo
 
 4.  Select the target OSS buckets and click **Batch Operation**.
 
-    ![Batch operations](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6500409951/p109802.png)
+    ![Batch operations](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6500409951/p109802.png)
 
     You can also click **Authorization** in the **Open Protection** column for a single OSS bucket to authorize SDDP to access the OSS bucket.
 
 5.  In the **Batch Processing for Selected Assets** dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for SDDP and set the remaining parameters as required.
 
-    ![Batch Operation](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6500409951/p109782.png)
+    ![Batch Operation](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6500409951/p109782.png)
 
     Set the following switches and parameters:
 
