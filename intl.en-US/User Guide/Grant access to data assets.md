@@ -119,7 +119,7 @@ SDDP can access and scan specific data assets in other Alibaba Cloud services fo
 
 5.  Find the target data assets and enter the username and password used to access each data asset in the **Username** and **Password** fields respectively.
 
-    You can also click **Batch Password Import** in the upper-right corner and upload an authorization file to import logon information for multiple data assets at a time. For more information, see [\#d6e922](#d6e922).
+    You can also click **Batch Password Import** in the upper-right corner and upload an authorization file to import logon information for multiple data assets at a time. For more information, see [Import logon information for multiple data assets at a time](#section_oqh_6ar_olk).
 
     **Note:** Incorrect usernames or passwords will result in an authorization failure. Check the information that you enter before you submit the authorization configuration.
 
@@ -166,7 +166,7 @@ SDDP can access and scan specific data assets in other Alibaba Cloud services fo
 
 5.  Find the target data assets and enter the username and password used to access each data asset in the **Username** and **Password** fields respectively.
 
-    You can also click **Batch Password Import** in the upper-right corner and upload an authorization file to import logon information for multiple data assets at a time. For more information, see [\#d6e922](#d6e922).
+    You can also click **Batch Password Import** in the upper-right corner and upload an authorization file to import logon information for multiple data assets at a time. For more information, see [Import logon information for multiple data assets at a time](#section_oqh_6ar_olk).
 
     **Note:** Incorrect usernames or passwords will result in an authorization failure. Check the information that you enter before you submit the authorization configuration.
 
@@ -372,8 +372,6 @@ SDDP allows you to upload an EXCEL file to import logon information for multiple
 7.  Click **OK**.
 
     After you upload the EXCEL file, the usernames and passwords that you enter in the file will be synchronized to the **Username** and **Password** columns for the relevant databases on the **RDS**, **DRDS**, and **PolarDB** tabs, as shown in the following figure. Then, you can authorize SDDP to access these data assets without the need to manually enter the logon information in the SDDP console.
-
-    ![After the import](../images/p143957.png)
 
 
 ## Troubleshoot an authorization failure
