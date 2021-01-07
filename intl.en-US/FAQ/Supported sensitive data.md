@@ -1,6 +1,6 @@
 # Supported sensitive data
 
-Sensitive Data Discovery and Protection \(SDDP\) can detect seven types of sensitive data. They are sensitive images, sensitive personal information, sensitive enterprise information, sensitive key information, sensitive device information, sensitive location information, and general sensitive information. This topic describes the supported sensitive data in detail.
+Sensitive Data Discovery and Protection \(SDDP\) can detect sensitive data such as sensitive images, sensitive personal information, and sensitive enterprise information. This topic describes the sensitive data that SDDP can detect.
 
 |Type|Sub-type|
 |----|--------|
@@ -8,7 +8,7 @@ Sensitive Data Discovery and Protection \(SDDP\) can detect seven types of sensi
 |Passport image|
 |Sensitive personal information|ID card number|
 |Bank card number|
-|Name in Simplified Chinese|
+|Name in simplified Chinese|
 |Mobile number|
 |Email address|
 |Passport number|
@@ -16,8 +16,10 @@ Sensitive Data Discovery and Protection \(SDDP\) can detect seven types of sensi
 |License plate number|
 |Telephone number|
 |Military ID|
+|Gender|
+|Race|
 |Hong Kong ID card number|
-|Name in Traditional Chinese|
+|Name in traditional Chinese|
 |Name in English|
 |Vehicle identification number|
 |Sensitive enterprise information|Business license number|
