@@ -9,7 +9,6 @@ This topic provides answers to commonly asked questions about sensitive data sca
 -   [How does SDDP scan data in a structured data asset, such as a MaxCompute project or an ApsaraDB RDS database?](#section_uxo_wqg_q6j)
 -   [Does SDDP log on to a database to obtain data?](#section_8ut_oez_69d)
 -   [When will a rescan be triggered?](#section_9lh_qg8_epu)
--   [Will SDDP skip my data in a scan?](#section_n7c_p51_g1q)
 
 ## What types of data assets can SDDP scan?
 
@@ -57,10 +56,4 @@ SDDP automatically rescans data in an authorized data asset in the scenarios des
 
 |SDDP charges you for scanning the new or modified objects.|
 |You change sensitive data detection rules. For example, you create, delete, enable, or disable rules.|SDDP automatically scans all data in all authorized data assets.|SDDP charges you for a full scan on data in all authorized data assets.|
-
-## Will SDDP skip my data in a scan?
-
-SDDP does not scan an OSS object if its size reaches 200 MB. SDDP scans only OSS objects whose size is less than 200 MB.
-
-**Note:** A package is considered as a single object. If the total size of all files in a package reaches 200 MB, SDDP does not scan the package.
 
