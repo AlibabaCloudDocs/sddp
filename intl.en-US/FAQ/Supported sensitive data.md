@@ -1,24 +1,28 @@
 # Supported sensitive data
 
-Sensitive Data Discovery and Protection \(SDDP\) can detect sensitive data such as sensitive images, sensitive personal information, and sensitive enterprise information. This topic describes the sensitive data that SDDP can detect.
+Data Security Center \(DSC\) can detect sensitive data such as sensitive images, sensitive personal information, and sensitive enterprise information. This topic describes the types of sensitive data that Data Security Center \(DSC\) can detect.
 
-|Type|Sub-type|
-|----|--------|
-|Sensitive images|ID card image|
-|Passport image|
-|Sensitive personal information|ID card number|
-|Bank card number|
+|Type|Subtype|
+|----|-------|
+|Sensitive images|ID card image \(mainland China\)|
+|Passport image \(mainland China\)|
+|Sensitive personal information|ID card number \(mainland China\)|
+|ID card number \(Malaysia\)|
+|ID card number \(Singapore\)|
+|Debit card number|
+|Credit card number|
+|Society for Worldwide Interbank Financial Telecommunication \(SWIFT\) code|
+|Social security number \(SSN\)|
 |Name in simplified Chinese|
-|Mobile number|
+|Mobile number \(mainland China\)|
 |Email address|
-|Passport number|
-|Hong Kong and Macao exit-entry permit number|
-|License plate number|
-|Telephone number|
+|Passport number \(mainland China\)|
+|Permit number of the Exit/Entry Permit for Travelling to and from Hong Kong and Macau|
+|License plate number \(mainland China\)|
+|Telephone number \(mainland China\)|
+|Telephone number \(the United States\)|
 |Military ID|
-|Gender|
-|Race|
-|Hong Kong ID card number|
+|ID card number \(Hong Kong\)|
 |Name in traditional Chinese|
 |Name in English|
 |Vehicle identification number|
@@ -37,8 +41,12 @@ Sensitive Data Discovery and Protection \(SDDP\) can detect sensitive data such 
 |IPv6 address|
 |International Mobile Equipment Identity \(IMEI\)|
 |Mobile equipment identifier \(MEID\)|
-|Sensitive location information|Province|
-|City|
+|/etc/passwd file in Linux|
+|/etc/shadow file in Linux|
+|URL|
+|Sensitive location information|Address \(mainland China\)|
+|Province \(mainland China\)|
+|City \(mainland China\)|
 |GPS location|
 |Address|
 |General sensitive information|Date|
