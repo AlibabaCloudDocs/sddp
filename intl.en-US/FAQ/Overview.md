@@ -1,16 +1,16 @@
 # Overview
 
-This topic provides answers to commonly asked questions about SDDP.
+The following part lists the topics that provide answers to frequently asked questions about Data Security Center \(DSC\).
 
 ## Features
 
 [Data security](/intl.en-US/FAQ/Data security.md)
 
-[FAQ about authorization](/intl.en-US/FAQ/FAQ about authorization.md)
+[Data authorization](/intl.en-US/FAQ/Data authorization.md)
 
 [Sensitive data scan and detection](/intl.en-US/FAQ/Sensitive data scan and detection.md)
 
-[Does static desensitization affect your raw data?](/intl.en-US/FAQ/Does static desensitization affect your raw data?.md)
+[Data de-identification](/intl.en-US/FAQ/Data de-identification.md)
 
 ## Supported items
 
