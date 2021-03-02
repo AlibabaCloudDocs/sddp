@@ -1,41 +1,41 @@
 ---
-keyword: [SDDP, grant access to data assets, OSS, ApsaraDB RDS, DRDS, PolarDB, Tablestore, self-managed databases hosted on ECS instances, and MaxCompute]
+keyword: [grant access to data assets, OSS, ApsaraDB RDS, DRDS, PolarDB, Tablestore, self-managed databases hosted on ECS instances, and MaxCompute]
 ---
 
 # Grant access to data assets
 
-Sensitive Data Discovery and Protection \(SDDP\) must be authorized to access specific data assets before it can detect sensitive data in the data assets. Supported data assets include Object Storage Service \(OSS\) buckets, ApsaraDB RDS databases, DRDS databases, PolarDB databases, Tablestore instances, self-managed databases hosted on Elastic Compute Service \(ECS\) instances, and MaxCompute projects. This topic shows you how to authorize SDDP to access specific data assets.
+Data Security Center \(DSC\) must be authorized to access specific data assets before it can detect sensitive data in the data assets. Supported data assets include Object Storage Service \(OSS\) buckets, ApsaraDB RDS databases, DRDS databases, PolarDB databases, Tablestore instances, self-managed databases hosted on Elastic Compute Service \(ECS\) instances, and MaxCompute projects. This topic describes how to authorize DSC to access specific data assets.
 
-SDDP is activated. SDDP is authorized to access Alibaba Cloud resources. For more information, see [Authorize SDDP to access Alibaba Cloud resources](/intl.en-US/User Guide/Authorize SDDP to access Alibaba Cloud resources.md).
+DSC is activated. DSC is authorized to access Alibaba Cloud resources. For more information, see [Authorize DSC to access Alibaba Cloud resources](/intl.en-US/User Guide/Authorize DSC to access Alibaba Cloud resources.md).
 
 ## Background information
 
-You can authorize SDDP to access specific data assets in Alibaba Cloud services. If you do not authorize SDDP to access the data assets, SDDP cannot detect sensitive data in Alibaba Cloud services or de-identify the sensitive data.
+You can authorize DSC to access specific data assets in Alibaba Cloud services. If you do not authorize DSC to access the data assets, DSC cannot detect sensitive data in Alibaba Cloud services or de-identify the sensitive data.
 
-## Authorize SDDP to access OSS buckets
+## Authorize DSC to access OSS buckets
 
-1.  Log on to the [SDDP console](https://yundun.console.aliyun.com/?p=sddp#/overview).
+1.  Log on to the [DSC console](https://yundun.console.aliyun.com/?p=sddp#/overview).
 
 2.  In the left-side navigation pane, choose **Data asset authorization** \> **Data asset authorization**.
 
 3.  On the OSS tab, click **Unauthorized**.
 
-4.  Select the OSS buckets that you want to authorize SDDP to access and click **Batch operation**.
+4.  Select the OSS buckets that you want to authorize DSC to access and click **Batch operation**.
 
     ![Batch operation](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6500409951/p109802.png)
 
-    You can also click **Authorization** in the **Open protection** column for a single OSS bucket to authorize SDDP to access the OSS bucket.
+    You can also click **Authorization** in the **Open protection** column for a single OSS bucket to authorize DSC to access the OSS bucket.
 
-5.  In the **Batch processing for selected assets** dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for SDDP and set the remaining parameters as required.
+5.  In the **Batch processing for selected assets** dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for DSC and set the remaining parameters as required.
 
     ![Batch operation page](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6500409951/p109782.png)
 
     Set the following switches and parameters:
 
-    -   **Identify permissions**: specifies whether to grant SDDP the sensitive data detection permission on the selected data assets.
-    -   **Audit permissions**: specifies whether to grant SDDP the audit permission on the selected data assets.
-    -   **Desensitization permissions**: specifies whether to grant SDDP the sensitive data de-identification permission on the selected data assets.
-    -   **Sensitive data sampling**: the number of samples that SDDP collects from the selected data assets. SDDP collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
+    -   **Identify permissions**: specifies whether to grant DSC the sensitive data detection permissions on the selected data assets.
+    -   **Audit permissions**: specifies whether to grant DSC the audit permissions on the selected data assets.
+    -   **Desensitization permissions**: specifies whether to grant DSC the sensitive data de-identification permissions on the selected data assets.
+    -   **Display number of sampling**: the number of samples that DSC collects from the selected data assets. DSC collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
         -   0
         -   5
         -   10
@@ -44,50 +44,50 @@ You can authorize SDDP to access specific data assets in Alibaba Cloud services.
         -   30 days
         -   90 days
         -   180 days
-        **Note:** You do not need to activate Log Service to archive audit logs that are generated by SDDP.
+        **Note:** You do not need to activate Log Service to archive audit logs that are generated by DSC.
 
-6.  Click **OK**.
+6.  Click **Ok**.
 
-    After the authorization is completed, SDDP scans authorized OSS buckets for sensitive data. When SDDP accesses an OSS bucket for the first time, SDDP automatically scans all the data in the OSS bucket, and you are charged for the full scan. For more information, see [How long does it take to scan data in my data asset after I authorize SDDP to access the data asset?](/intl.en-US/FAQ/Sensitive data scan and detection.md).
+    After the authorization is complete, DSC scans authorized OSS buckets for sensitive data. When DSC accesses an OSS bucket for the first time, DSC automatically scans all the data in the OSS bucket, and you are charged for the full scan. For more information, see the "How long does it take to scan data in my data asset after I authorize SDDP to access the data asset?" section of the [Sensitive data scan and detection](/intl.en-US/FAQ/Sensitive data scan and detection.md) topic.
 
-    In the list of authorized data assets, you can modify the authorization configuration for a data asset or cancel the authorization for a data asset. After you cancel the authorization, SDDP no longer scans the OSS bucket.
+    In the list of authorized data assets, you can modify the authorization configuration for a data asset or cancel the authorization for a data asset. After you cancel the authorization for an OSS bucket, DSC no longer scans the OSS bucket.
 
-    **Note:** SDDP scans only authorized OSS buckets and analyzes risks of sensitive data detected in these OSS buckets.
+    **Note:** DSC scans only authorized OSS buckets and analyzes risks of sensitive data detected in these OSS buckets.
 
 
-## Authorize SDDP to access ApsaraDB RDS databases
+## Authorize DSC to access ApsaraDB RDS databases
 
-1.  Log on to the [SDDP console](https://yundun.console.aliyun.com/?p=sddp#/overview).
+1.  Log on to the [DSC console](https://yundun.console.aliyun.com/?p=sddp#/overview).
 
 2.  In the left-side navigation pane, choose **Data asset authorization** \> **Data asset authorization**.
 
 3.  On the Cloud hosting page, click the **RDS** tab.
 
-4.  On the **RDS** tab, click **Unauthorized**.
+4.  On the **RDS** tab, click **Not authorized**.
 
-5.  Find the data assets that you want to authorize SDDP to access and enter the username and password that are used to access each data asset in the **Username** and **Password** fields.
+5.  Find the data assets that you want to authorize DSC to access and enter the username and password that are used to access each data asset in the **Username** and **Password** fields.
 
-    You can also click **Batch password import** to import logon information for multiple data assets at a time. For more information, see [Import usernames and passwords for multiple data assets at a time](/intl.en-US/User Guide/Grant access to data assets.md).
+    You can also click **Batch password import** to import the logon information for multiple data assets at a time. For more information, see [Import logon information for multiple data assets at a time](/intl.en-US/User Guide/Grant access to data assets.md).
 
-    **Note:** Incorrect usernames or passwords cause an authorization failure. Make sure that you enter correct usernames and passwords.
+    **Note:** Invalid usernames or passwords cause an authorization failure. Make sure that you enter valid usernames and passwords.
 
-6.  Select the data assets that you want to authorize SDDP to access and click **Batch operation**.
+6.  Select the data assets that you want to authorize DSC to access and click **Batch operation**.
 
-    You can also click **Authorization** in the Actions column for a single data asset to authorize SDDP to access the data asset.
+    You can also click **One-click authorization** in the Actions column for a single data asset to authorize DSC to access the data asset.
 
-7.  In the Batch processing for selected assets dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for SDDP and set the remaining parameters as required.
+7.  In the Batch operation dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for DSC and set the remaining parameters as required.
 
     Set the following switches and parameters:
 
-    -   **Identify permissions**: specifies whether to grant SDDP the sensitive data detection permission on the selected data assets.
-    -   **Audit permissions**: specifies whether to grant SDDP the audit permission on the selected data assets.
+    -   **Identify permissions**: specifies whether to grant DSC the sensitive data detection permissions on the selected data assets.
+    -   **Audit permissions**: specifies whether to grant DSC the audit permissions on the selected data assets.
 
         SDDP allows you to collect audit logs that cover the generation, update, and use of your data assets. The log information includes the audit rule that is hit for a data asset, the type of the data asset, the type of the operation that hits the audit rule, and the operator account.
 
-        **Note:** After you enable the audit log feature for an ApsaraDB RDS database, SQL Explorer is automatically enabled, and you are charged for using SQL Explorer.You are charged an hourly fee of USD 0.0018 per GB for using SQL Explorer of the non-trial edition. The fee is listed in the bill of your ApsaraDB RDS service. For more information about how to view the fee, see [View the spending details of an ApsaraDB for RDS instance](/intl.en-US/Purchase Guide/View the spending details of an ApsaraDB for RDS instance.md). For more information about SQL Explorer, see [SQL Explorer](/intl.en-US/RDS MySQL Database/Audit/SQL Explorer.md).
+        **Note:** After you enable the audit log feature for an ApsaraDB RDS database, SQL Explorer is automatically enabled, and you are charged for using SQL Explorer.You are charged an hourly fee of USD 0.0018 per GB for using SQL Explorer of the non-trial edition. The fee is listed in your bill of ApsaraDB RDS. For more information about how to view the fee, see [View the spending details of an ApsaraDB for RDS instance](/intl.en-US/Purchase Guide/View the spending details of an ApsaraDB for RDS instance.md). For more information about SQL Explorer, see [Use the SQL Explorer feature on an ApsaraDB RDS for MySQL instance](/intl.en-US/RDS MySQL Database/Audit/Use the SQL Explorer feature on an ApsaraDB RDS for MySQL instance.md).
 
-    -   **Desensitization permissions**: specifies whether to grant SDDP the sensitive data de-identification permission on the selected data assets.
-    -   **Sensitive data sampling**: the number of samples that SDDP collects from the selected data assets. SDDP collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
+    -   **Desensitization permissions**: specifies whether to grant DSC the sensitive data de-identification permissions on the selected data assets.
+    -   **Display number of sampling**: the number of samples that DSC collects from the selected data assets. DSC collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
         -   0
         -   5
         -   10
@@ -96,45 +96,45 @@ You can authorize SDDP to access specific data assets in Alibaba Cloud services.
         -   30 days
         -   90 days
         -   180 days
-        **Note:** You do not need to activate Log Service to archive audit logs that are generated by SDDP.
+        **Note:** You do not need to activate Log Service to archive audit logs that are generated by DSC.
 
 8.  Click **OK**.
 
     **Note:** If the authorization fails, check whether the usernames and passwords are correct.
 
-    After the authorization is completed, SDDP scans authorized data assets for sensitive data.
+    After the authorization is complete, DSC scans authorized data assets for sensitive data.
 
-    In the list of authorized data assets, you can modify the authorization configuration for a data asset or cancel the authorization for a data asset. When you modify the authorization configuration for an ApsaraDB RDS database, you can modify only the username and password for accessing the database. After you cancel the authorization, SDDP no longer scans the database.
+    In the list of authorized data assets, you can modify the authorization configuration for a data asset or cancel the authorization for a data asset. When you modify the authorization configuration for an ApsaraDB RDS database, you can modify only the username and password for accessing the database. After you cancel the authorization, DSC no longer scans the database.
 
 
-## Authorize SDDP to access DRDS databases
+## Authorize DSC to access DRDS databases
 
-1.  Log on to the [SDDP console](https://yundun.console.aliyun.com/?p=sddp#/overview).
+1.  Log on to the [DSC console](https://yundun.console.aliyun.com/?p=sddp#/overview).
 
 2.  In the left-side navigation pane, choose **Data asset authorization** \> **Data asset authorization**.
 
 3.  On the Cloud hosting page, click the **DRDS** tab.
 
-4.  On the **DRDS** tab, click **Unauthorized**.
+4.  On the **DRDS** tab, click **Not authorized**.
 
-5.  Find the data assets that you want to authorize SDDP to access and enter the username and password that are used to access each data asset in the **Username** and **Password** fields.
+5.  Find the data assets that you want to authorize DSC to access and enter the username and password that are used to access each data asset in the **Username** and **Password** fields.
 
-    You can also click **Batch password import** to import logon information for multiple data assets at a time. For more information, see [Import usernames and passwords for multiple data assets at a time](/intl.en-US/User Guide/Grant access to data assets.md).
+    You can also click **Batch password import** to import the logon information for multiple data assets at a time. For more information, see [Import logon information for multiple data assets at a time](/intl.en-US/User Guide/Grant access to data assets.md).
 
-    **Note:** Incorrect usernames or passwords cause an authorization failure. Make sure that you enter correct usernames and passwords.
+    **Note:** Invalid usernames or passwords cause an authorization failure. Make sure that you enter valid usernames and passwords.
 
-6.  Select the data assets that you want to authorize SDDP to access and click **Batch operation**.
+6.  Select the data assets that you want to authorize DSC to access and click **Batch operation**.
 
-    You can also click **Authorization** in the Actions column for a single data asset to authorize SDDP to access the data asset.
+    You can also click **One-click authorization** in the Actions column for a single data asset to authorize DSC to access the data asset.
 
-7.  In the Batch processing for selected assets dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for SDDP and set the remaining parameters as required.
+7.  In the Batch operation dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for DSC and set the remaining parameters as required.
 
     Set the following switches and parameters:
 
-    -   **Identify permissions**: specifies whether to grant SDDP the sensitive data detection permission on the selected data assets.
-    -   **Audit permissions**: specifies whether to grant SDDP the audit permission on the selected data assets.
-    -   **Desensitization permissions**: specifies whether to grant SDDP the sensitive data de-identification permission on the selected data assets.
-    -   **Sensitive data sampling**: the number of samples that SDDP collects from the selected data assets. SDDP collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
+    -   **Identify permissions**: specifies whether to grant DSC the sensitive data detection permissions on the selected data assets.
+    -   **Audit permissions**: specifies whether to grant DSC the audit permissions on the selected data assets.
+    -   **Desensitization permissions**: specifies whether to grant DSC the sensitive data de-identification permissions on the selected data assets.
+    -   **Display number of sampling**: the number of samples that DSC collects from the selected data assets. DSC collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
         -   0
         -   5
         -   10
@@ -143,20 +143,20 @@ You can authorize SDDP to access specific data assets in Alibaba Cloud services.
         -   30 days
         -   90 days
         -   180 days
-        **Note:** You do not need to activate Log Service to archive audit logs that are generated by SDDP.
+        **Note:** You do not need to activate Log Service to archive audit logs that are generated by DSC.
 
 8.  Click **OK**.
 
     **Note:** If the authorization fails, check whether the usernames and passwords are correct.
 
-    After the authorization is completed, SDDP scans authorized data assets for sensitive data.
+    After the authorization is complete, DSC scans authorized data assets for sensitive data.
 
-    In the list of authorized data assets, you can modify the authorization configuration for a data asset or cancel the authorization for a data asset. When you modify the authorization configuration for a DRDS database, you can modify only the username and password for accessing the database. After you cancel the authorization, SDDP no longer scans the database.
+    In the list of authorized data assets, you can modify the authorization configuration for a data asset or cancel the authorization for a data asset. When you modify the authorization configuration for a DRDS database, you can modify only the username and password for accessing the database. After you cancel the authorization, DSC no longer scans the database.
 
 
-## Authorize SDDP to access PolarDB databases
+## Authorize DSC to access PolarDB databases
 
-1.  Log on to the [SDDP console](https://yundun.console.aliyun.com/?p=sddp#/overview).
+1.  Log on to the [DSC console](https://yundun.console.aliyun.com/?p=sddp#/overview).
 
 2.  In the left-side navigation pane, choose **Data asset authorization** \> **Data asset authorization**.
 
@@ -164,24 +164,24 @@ You can authorize SDDP to access specific data assets in Alibaba Cloud services.
 
 4.  On the **PolarDB** tab, click **Unauthorized**.
 
-5.  Find the data assets that you want to authorize SDDP to access and enter the username and password that are used to access each data asset in the **Username** and **Password** fields.
+5.  Find the data assets that you want to authorize DSC to access and enter the username and password that are used to access each data asset in the **Username** and **Password** fields.
 
-    You can also click **Batch password import** to import logon information for multiple data assets at a time. For more information, see [Import usernames and passwords for multiple data assets at a time](/intl.en-US/User Guide/Grant access to data assets.md).
+    You can also click **Batch password import** to import the logon information for multiple data assets at a time. For more information, see [Import logon information for multiple data assets at a time](/intl.en-US/User Guide/Grant access to data assets.md).
 
-    **Note:** Incorrect usernames or passwords cause an authorization failure. Make sure that you enter correct usernames and passwords.
+    **Note:** Invalid usernames or passwords cause an authorization failure. Make sure that you enter valid usernames and passwords.
 
-6.  Select the data assets that you want to authorize SDDP to access and click **Batch operation**.
+6.  Select the data assets that you want to authorize DSC to access and click **Batch operation**.
 
-    You can also click **Authorization** in the Actions column for a single data asset to authorize SDDP to access the data asset.
+    You can also click **One-click authorization** in the Actions column for a single data asset to authorize DSC to access the data asset.
 
-7.  In the Batch processing for selected assets dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for SDDP and set the remaining parameters as required.
+7.  In the Batch operation dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for DSC and set the remaining parameters as required.
 
     Set the following switches and parameters:
 
-    -   **Identify permissions**: specifies whether to grant SDDP the sensitive data detection permission on the selected data assets.
-    -   **Audit permissions**: specifies whether to grant SDDP the audit permission on the selected data assets.
-    -   **Desensitization permissions**: specifies whether to grant SDDP the sensitive data de-identification permission on the selected data assets.
-    -   **Sensitive data sampling**: the number of samples that SDDP collects from the selected data assets. SDDP collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
+    -   **Identify permissions**: specifies whether to grant DSC the sensitive data detection permissions on the selected data assets.
+    -   **Audit permissions**: specifies whether to grant DSC the audit permissions on the selected data assets.
+    -   **Desensitization permissions**: specifies whether to grant DSC the sensitive data de-identification permissions on the selected data assets.
+    -   **Display number of sampling**: the number of samples that DSC collects from the selected data assets. DSC collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
         -   0
         -   5
         -   10
@@ -190,22 +190,22 @@ You can authorize SDDP to access specific data assets in Alibaba Cloud services.
         -   30 days
         -   90 days
         -   180 days
-        **Note:** You do not need to activate Log Service to archive audit logs that are generated by SDDP.
+        **Note:** You do not need to activate Log Service to archive audit logs that are generated by DSC.
 
 8.  Click **OK**.
 
     **Note:** If the authorization fails, check whether the usernames and passwords are correct.
 
-    After the authorization is completed, SDDP scans authorized data assets for sensitive data.
+    After the authorization is complete, DSC scans authorized data assets for sensitive data.
 
-    In the list of authorized data assets, you can modify the authorization configuration for a data asset or cancel the authorization for a data asset. When you modify the authorization configuration for a PolarDB database, you can modify only the username and password for accessing the database. After you cancel the authorization, SDDP no longer scans the database.
+    In the list of authorized data assets, you can modify the authorization configuration for a data asset or cancel the authorization for a data asset. When you modify the authorization configuration for a PolarDB database, you can modify only the username and password for accessing the database. After you cancel the authorization, DSC no longer scans the database.
 
 
-## Authorize SDDP to access Tablestore instances
+## Authorize DSC to access Tablestore instances
 
 OTS refers to Tablestore.
 
-1.  Log on to the [SDDP console](https://yundun.console.aliyun.com/?p=sddp#/overview).
+1.  Log on to the [DSC console](https://yundun.console.aliyun.com/?p=sddp#/overview).
 
 2.  In the left-side navigation pane, choose **Data asset authorization** \> **Data asset authorization**.
 
@@ -213,18 +213,18 @@ OTS refers to Tablestore.
 
 4.  On the **OTS** tab, click **Unauthorized**.
 
-5.  Select the data assets that you want to authorize SDDP to access and click **Batch operation**.
+5.  Select the data assets that you want to authorize DSC to access and click **Batch operation**.
 
-    You can also click **Authorization** in the Actions column for a single data asset to authorize SDDP to access the data asset.
+    You can also click **One-click authorization** in the Actions column for a single data asset to authorize DSC to access the data asset.
 
-6.  In the Batch processing for selected assets dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for SDDP and set the remaining parameters as required.
+6.  In the Batch operation dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for DSC and set the remaining parameters as required.
 
     Set the following switches and parameters:
 
-    -   **Identify permissions**: specifies whether to grant SDDP the sensitive data detection permission on the selected data assets.
-    -   **Audit permissions**: specifies whether to grant SDDP the audit permission on the selected data assets.
-    -   **Desensitization permissions**: specifies whether to grant SDDP the sensitive data de-identification permission on the selected data assets.
-    -   **Sensitive data sampling**: the number of samples that SDDP collects from the selected data assets. SDDP collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
+    -   **Identify permissions**: specifies whether to grant DSC the sensitive data detection permissions on the selected data assets.
+    -   **Audit permissions**: specifies whether to grant DSC the audit permissions on the selected data assets.
+    -   **Desensitization permissions**: specifies whether to grant DSC the sensitive data de-identification permissions on the selected data assets.
+    -   **Display number of sampling**: the number of samples that DSC collects from the selected data assets. DSC collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
         -   0
         -   5
         -   10
@@ -233,21 +233,21 @@ OTS refers to Tablestore.
         -   30 days
         -   90 days
         -   180 days
-        **Note:** You do not need to activate Log Service to archive audit logs that are generated by SDDP.
+        **Note:** You do not need to activate Log Service to archive audit logs that are generated by DSC.
 
-7.  Click **OK**.
+7.  Click **Ok**.
 
-    After the authorization is completed, SDDP scans authorized data assets for sensitive data.
+    After the authorization is complete, DSC scans authorized data assets for sensitive data.
 
 
-## Authorize SDDP to access self-managed databases hosted on ECS instances
+## Authorize DSC to access self-managed databases hosted on ECS instances
 
-A self-managed database hosted on an ECS instance must meet the following requirements before it can be scanned by SDDP:
+A self-managed database hosted on an ECS instance must meet the following requirements before DSC can scan the database:
 
--   The ECS instance on which the self-managed database is hosted resides in a virtual private cloud \(VPC\) so that SDDP can scan the database.
--   The self-managed database hosted on the ECS instance is a MySQL or SQL Server database.
+-   The ECS instance on which the self-managed database is hosted resides in a virtual private cloud \(VPC\) so that DSC can scan the database.
+-   The self-managed database hosted on the ECS instance is a MySQL or an SQL Server database.
 
-1.  Log on to the [SDDP console](https://yundun.console.aliyun.com/?p=sddp#/overview).
+1.  Log on to the [DSC console](https://yundun.console.aliyun.com/?p=sddp#/overview).
 
 2.  In the left-side navigation pane, choose **Data asset authorization** \> **Data asset authorization**.
 
@@ -257,26 +257,26 @@ A self-managed database hosted on an ECS instance must meet the following requir
 
 5.  In the **Asset authorization** dialog box, set the parameters as required and click **Next**.
 
-    The following table describes the parameters for adding a self-managed database hosted on an ECS instance to SDDP.
+    The following table describes the parameters for adding a self-managed database hosted on an ECS instance to DSC.
 
     |Parameter|Description|
     |---------|-----------|
-    |**Region**|The region of the self-managed database that is hosted on the ECS instance and you want to authorize SDDP to access.|
-    |**ECS instance ID**|The ID of the ECS instance on which the self-managed database that you want to authorize SDDP to access is hosted.|
-    |**Database type**|The type of the self-managed database that is hosted on the ECS instance and you want to authorize SDDP to access. SDDP supports the following two types of self-managed databases hosted on ECS instances: MySQL and SQL Server.|
-    |**Library name**|The name of the self-managed database that is hosted on the ECS instance and you want to authorize SDDP to access. **Note:** If you also need to authorize SDDP to access other self-managed databases hosted on the ECS instance, click **Add Database** to add the databases. |
+    |**Region**|The region where the self-managed database that you want to authorize DSC to access resides.|
+    |**ECS instance ID**|The ID of the ECS instance on which the self-managed database that you want to authorize DSC to access is hosted.|
+    |**Database type**|The type of the self-managed database that you want to authorize DSC to access. DSC supports the following two types of self-managed databases hosted on ECS instances: MySQL and SQL Server.|
+    |**Library name**|The name of the self-managed database that you want to authorize DSC to access. **Note:** To authorize DSC to access other self-managed databases hosted on the ECS instance, click **Add Database** to add the databases. |
     |**Port**|The port number used to access the self-managed database hosted on the ECS instance.|
     |**User name**|The username and password of a valid user of the self-managed database hosted on the ECS instance.|
     |**Password**|
 
-6.  In the Batch processing for selected assets dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for SDDP and set the remaining parameters as required.
+6.  In the Batch operation dialog box, turn on or off the switches to configure the detection, audit, and de-identification permissions for DSC and set the remaining parameters as required.
 
     Set the following switches and parameters:
 
-    -   **Identify permissions**: specifies whether to grant SDDP the sensitive data detection permission on the selected data assets.
-    -   **Audit permissions**: specifies whether to grant SDDP the audit permission on the selected data assets.
-    -   **Desensitization permissions**: specifies whether to grant SDDP the sensitive data de-identification permission on the selected data assets.
-    -   **Sensitive data sampling**: the number of samples that SDDP collects from the selected data assets. SDDP collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
+    -   **Identify permissions**: specifies whether to grant DSC the sensitive data detection permissions on the selected data assets.
+    -   **Audit permissions**: specifies whether to grant DSC the audit permissions on the selected data assets.
+    -   **Desensitization permissions**: specifies whether to grant DSC the sensitive data de-identification permissions on the selected data assets.
+    -   **Display number of sampling**: the number of samples that DSC collects from the selected data assets. DSC collects samples when it detects sensitive data in the data assets. You can use the sensitive data samples to further analyze the sensitive data. Valid values:
         -   0
         -   5
         -   10
@@ -285,16 +285,16 @@ A self-managed database hosted on an ECS instance must meet the following requir
         -   30 days
         -   90 days
         -   180 days
-        **Note:** You do not need to activate Log Service to archive audit logs that are generated by SDDP.
+        **Note:** You do not need to activate Log Service to archive audit logs that are generated by DSC.
 
-7.  Click **OK**.
+7.  Click **Ok**.
 
-    After the authorization is completed, SDDP scans authorized data assets for sensitive data.
+    After the authorization is complete, DSC scans authorized data assets for sensitive data.
 
 
-## Authorize SDDP to access a MaxCompute project
+## Authorize DSC to access a MaxCompute project
 
-1.  Log on to the [SDDP console](https://yundun.console.aliyun.com/?p=sddp#/overview).
+1.  Log on to the [DSC console](https://yundun.console.aliyun.com/?p=sddp#/overview).
 
 2.  In the left-side navigation pane, choose **Data asset authorization** \> **Data asset authorization**.
 
@@ -302,14 +302,14 @@ A self-managed database hosted on an ECS instance must meet the following requir
 
 4.  On the MaxCompute tab, click **Add data assets**.
 
-5.  In the Add data assets dialog box, set the parameters as required. The following table describes the parameters for adding a MaxCompute project to SDDP.
+5.  In the Add data assets dialog box, set the parameters as required. The following table describes the parameters for adding a MaxCompute project to DSC.
 
     |Parameter|Description|
     |---------|-----------|
-    |**Region**|The region of the MaxCompute project that you want to authorize SDDP to access.|
+    |**Region**|The region where the MaxCompute project that you want to authorize DSC to access resides.|
     |**Project Name**|The name of the MaxCompute project. **Note:** Fuzzy search is not supported. You must enter the exact name of the project. |
 
-6.  Run the following commands on the MaxCompute client to add the SDDP account **yundun\_sddp** to the MaxCompute project. SDDP uses this account to access the MaxCompute project.
+6.  Run the following commands on the MaxCompute client to add the DSC account **yundun\_sddp** to the MaxCompute project. DSC uses this account to access the MaxCompute project.
 
     ```
     add user aliyun$yundun_sddp;
@@ -321,16 +321,16 @@ A self-managed database hosted on an ECS instance must meet the following requir
 
     -   If no error message is returned after the preceding commands are run, go to [Step 8](#step_ck9_1p7_uts).
     -   If an error message is returned after the preceding commands are run, go to [Step 7](#step_r9w_5jz_0q3).
-7.  Run the following command to add the service IP addresses of SDDP to the IP address whitelist of the MaxCompute project:
+7.  Run the following command to add the service IP addresses of DSC to the IP address whitelist of the MaxCompute project:
 
     ```
     
     setproject odps.security.ip.whitelist=11.193.236.0/24,11.193.64.0/24,11.193.58.0/24 odps.security.vpc.whitelist=<VPC ID>;
-    // 11.193.236.0/24, 11.193.64.0/24, and 11.193.58.0/24 are the Classless Inter-Domain Routing (CIDR) blocks used by SDDP on the classic network. They must be added to the IP address whitelist.
+    // 11.193.236.0/24, 11.193.64.0/24, and 11.193.58.0/24 are the Classless Inter-Domain Routing (CIDR) blocks used by DSC on the classic network. They must be added to the IP address whitelist.
     // Replace the VPC ID with that of the region where your MaxCompute project resides. The following table describes the VPC IDs of the supported regions.
     ```
 
-    If the IP address whitelist feature is enabled for your MaxCompute project, you must add the service IP addresses of SDDP to the IP address whitelist of the MaxCompute project. You can run the `setproject;` command to check whether the IP address whitelist feature is enabled for your MaxCompute project. If the value of the `odps.security.vpc.whitelist` parameter is empty, the IP address whitelist feature is not enabled. In this case, you can skip this step.
+    If the IP address whitelist feature is enabled for your MaxCompute project, you must add the service IP addresses of DSC to the IP address whitelist of the MaxCompute project. This prevents authorization failures. You can run the `setproject;` command to check whether the IP address whitelist feature is enabled for your MaxCompute project. If the value of the `odps.security.vpc.whitelist` parameter is empty, the IP address whitelist feature is not enabled. In this case, you can skip this step.
 
     |Region|Region ID|VPC ID|
     |------|---------|------|
@@ -342,49 +342,49 @@ A self-managed database hosted on an ECS instance must meet the following requir
 
     **Note:** After you configure the IP address whitelist, wait 5 minutes before you go to the next step.
 
-8.  Click **OK**.
+8.  Click **Ok**.
 
-    **Note:** If the authorization fails, check whether the authorization parameters are correctly set and whether the SDDP account is added to the MaxCompute project.
+    **Note:** If the authorization fails, check whether the authorization parameters are correctly set and whether the DSC account is added to the MaxCompute project.
 
-    After the authorization is completed, SDDP scans the authorized MaxCompute project for sensitive data.
+    After the authorization is complete, DSC scans the authorized MaxCompute project for sensitive data.
 
-    In the list of authorized MaxCompute projects, you can cancel the authorization for a MaxCompute project. After you cancel the authorization, SDDP no longer scans the project.
+    In the list of authorized MaxCompute projects, you can cancel the authorization for a MaxCompute project. After you cancel the authorization, DSC no longer scans the project.
 
 
-## Import usernames and passwords for multiple data assets at a time
+## Import logon information for multiple data assets at a time
 
-SDDP allows you to upload an EXCEL file to import usernames and passwords for multiple data assets at a time. This way, you can authorize SDDP to access multiple data assets at a time. The data assets include ApsaraDB RDS databases, DRDS databases, and PolarDB databases. To import usernames and passwords for multiple data assets at a time, perform the following steps:
+DSC allows you to upload an EXCEL file to import logon information for multiple data assets at a time. This way, you can authorize DSC to access multiple data assets at a time. The data assets include ApsaraDB RDS databases, DRDS databases, and PolarDB databases. To import logon information for multiple data assets at a time, perform the following steps:
 
-1.  Log on to the [SDDP console](https://yundun.console.aliyun.com/?p=sddp#/overview).
+1.  Log on to the [DSC console](https://yundun.console.aliyun.com/?p=sddp#/overview).
 
 2.  In the left-side navigation pane, choose **Data asset authorization** \> **Data asset authorization**.
 
 3.  On the Cloud hosting page, click **Batch password import** in the upper-right corner.
 
-4.  In the **Batch password import** dialog box, click **SDDP Authorization File Template.xlsx**.
+4.  In the **Batch password import** dialog box, click **DSC Authorization File Template.xlsx**.
 
 5.  Open the downloaded template file, enter the username and password used to access each data asset in the **user name** and **password** columns, and then save the template file.
 
-    If you modify the existing usernames and passwords in the template file and upload the file to the SDDP console, the usernames and passwords saved in the SDDP console are updated.
+    If you modify the existing usernames and passwords in the template file and upload the file to the DSC console, the usernames and passwords saved in the DSC console are updated.
 
 6.  In the **Batch password import** dialog box, click **File Upload** to upload the template file that you have edited.
 
 7.  Click **OK**.
 
-    The EXCEL file is uploaded. Then, SDDP synchronizes the usernames and passwords that you enter in the file to the **Username** and **Password** columns for the related databases on the **RDS**, **DRDS**, and **PolarDB** tabs. The following figure shows that the usernames and passwords are imported. You can authorize SDDP to access these databases on the Cloud hosting page without the need to manually enter the usernames and passwords for accessing the databases.
+    The EXCEL file is uploaded. Then, DSC synchronizes the usernames and passwords that you enter in the file to the **Username** and **Password** columns for the related databases on the **RDS**, **DRDS**, and **PolarDB** tabs. The following figure shows that the usernames and passwords are imported. You can authorize DSC to access these databases on the Cloud hosting page without the need to manually enter the usernames and passwords for accessing the databases.
 
     ![After the import](../images/p143957.png)
 
 
 ## Troubleshoot an authorization failure
 
-An authorization failure may occur when you authorize SDDP to access your data assets. You can troubleshoot an authorization failure based on the following possible causes:
+An authorization failure may occur when you authorize DSC to access your data assets. You can troubleshoot an authorization failure based on the following possible causes:
 
 -   **Possible causes of an authorization failure for ApsaraDB RDS**
     -   The username or password for accessing the ApsaraDB RDS database is invalid.
-    -   The service IP addresses of SDDP are deleted from the whitelist of the ApsaraDB RDS database.
+    -   The service IP addresses of DSC are deleted from the whitelist of the ApsaraDB RDS database.
     -   The ApsaraDB RDS database resides on the classic network, but the public endpoint of the ApsaraDB RDS database is inaccessible due to access control.
 -   **Possible causes of an authorization failure for MaxCompute**
     -   The name of the MaxCompute project is invalid.
-    -   The SDDP account fails to be added to the MaxCompute project.
+    -   The DSC account fails to be added to the MaxCompute project.
 
