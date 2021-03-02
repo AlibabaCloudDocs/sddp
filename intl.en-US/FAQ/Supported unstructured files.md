@@ -1,6 +1,6 @@
 # Supported unstructured files
 
-This topic describes the unstructured files from which Sensitive Data Discovery and Protection \(SDDP\) can detect sensitive data.
+This topic describes the types of unstructured files from which Data Security Center \(DSC\) can detect sensitive data.
 
 |No.|File|No.|File|
 |---|----|---|----|
@@ -22,13 +22,13 @@ This topic describes the unstructured files from which Sensitive Data Discovery 
 |16|Java KeyStore file|100|XPS file|
 |17|Shell script|101|Email file|
 |18|HTML file|102|VCF file|
-|19|GO source file|103|Microsoft Reader file|
+|19|Go source file|103|Microsoft Reader file|
 |20|DataX configuration file|104|Excel file|
-|21|IIS configuration file|105|Outlook file|
+|21|Internet Information Services \(IIS\) configuration file|105|Outlook file|
 |22|Tomcat configuration file|106|Word file|
 |23|MaxCompute configuration file|107|PDF file|
 |24|OpenVPN configuration file|108|FDF file|
-|25|OSS configuration file|109|Lotus Multi-Byte Character Set file|
+|25|Object Storage Service \(OSS\) configuration file|109|Lotus Multi-Byte Character Set file|
 |26|Tomcat application configuration file|110|Lotus Word Pro file|
 |27|Tomcat users configuration file|111|PowerPoint file|
 |28|WebLogic configuration file|112|SVG image XML file|
@@ -56,7 +56,7 @@ This topic describes the unstructured files from which Sensitive Data Discovery 
 |50|EPS file|134|JNG file|
 |51|OpenEXR file|135|M4V file|
 |52|Gem file|136|MNG file|
-|53|Mac OS icon file|137|ASF file|
+|53|macOS icon file|137|ASF file|
 |54|Full-text index in the Windows help system|138|SG file|
 |55|Windows installation information|139|ACC file|
 |56|NIFF file|140|SSH private key|
