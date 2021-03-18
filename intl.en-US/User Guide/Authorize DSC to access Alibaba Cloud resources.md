@@ -12,20 +12,20 @@ When you log on to the DSC console for the first time after you activate DSC, th
 
 2.  On the Overview page, click **Authorize Now**.
 
-    After you click Authorize Now, Alibaba Cloud automatically creates the AliyunServiceRoleForDSC role for DSC. You can view the created service-linked role on the RAM Roles page of the [Resource Access Management \(RAM\) console](https://ram.console.aliyun.com/roles). You can also query the information about the service-linked role for DSC by using the API or command line interface \(CLI\). For more information, see [Service-linked roles](/intl.en-US/RAM Role Management/Service-linked roles.md).
+    After you click Authorize Now, Alibaba Cloud automatically creates the AliyunServiceRoleForSDDP role for DSC. You can view the created service-linked role on the RAM Roles page of the [Resource Access Management \(RAM\) console](https://ram.console.aliyun.com/roles). You can also query the information about the service-linked role for DSC by using the API or command line interface \(CLI\). For more information, see [Service-linked roles](/intl.en-US/RAM Role Management/Service-linked roles.md).
 
     After you authorize DSC to access Alibaba Cloud resources, you must authorize DSC to access specific data assets before DSC can scan the data assets for sensitive data and analyze the detected sensitive data. For more information, see [Grant access to data assets](/intl.en-US/User Guide/Grant access to data assets.md).
 
 
 ## Service-linked role for DSC
 
-Role name: AliyunServiceRoleForDSC
+Role name: AliyunServiceRoleForSDDP
 
-Policy name: AliyunServiceRolePolicyForDSC
+Policy name: AliyunServiceRolePolicyForSDDP
 
 ## Delete the service-linked role
 
-If you no longer need to use DSC, you can delete the service-linked role for DSC. You can delete the AliyunServiceRoleForDSC role in the [RAM console](https://ram.console.aliyun.com/roles). For more information, see [Service-linked roles](/intl.en-US/RAM Role Management/Service-linked roles.md).
+If you no longer need to use DSC, you can delete the service-linked role for DSC. You can delete the AliyunServiceRoleForSDDP role in the [RAM console](https://ram.console.aliyun.com/roles). For more information, see [Service-linked roles](/intl.en-US/RAM Role Management/Service-linked roles.md).
 
 ## Usage notes
 
