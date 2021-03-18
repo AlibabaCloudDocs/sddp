@@ -12,20 +12,20 @@
 
 2.  在概览页面单击**立即授权**。
 
-    当您单击立即授权后，阿里云将自动为您创建DSC服务关联角色AliyunServiceRoleForDSC。您可以在[RAM控制台](https://ram.console.aliyun.com/roles)的角色管理页面查看系统为您自动创建的服务关联角色。您也可以使用API、CLI调用ListRoles，在返回结果中查看DSC服务的关联角色。更多信息，请参见[服务关联角色](/cn.zh-CN/角色管理/服务关联角色.md)。
+    当您单击立即授权后，阿里云将自动为您创建DSC服务关联角色AliyunServiceRoleForSDDP。您可以在[RAM控制台](https://ram.console.aliyun.com/roles)的角色管理页面查看系统为您自动创建的服务关联角色。您也可以使用API、CLI调用ListRoles，在返回结果中查看DSC服务的关联角色。更多信息，请参见[服务关联角色](/cn.zh-CN/角色管理/服务关联角色.md)。
 
     完成授权DSC访问云资源操作后，您需要进行资产保护授权才能进行敏感数据扫描和分析等操作。具体操作，请参见[数据资产授权](/cn.zh-CN/用户指南/数据资产授权.md)。
 
 
 ## DSC服务关联角色介绍
 
-角色名称：AliyunServiceRoleForDSC
+角色名称：AliyunServiceRoleForSDDP
 
-角色权限策略：AliyunServiceRolePolicyForDSC
+角色权限策略：AliyunServiceRolePolicyForSDDP
 
 ## 删除服务关联角色
 
-当您不再需要使用DSC服务时，可以删除DSC的服务关联角色。您可以登录[RAM控制台](https://ram.console.aliyun.com/roles)删除AliyunServiceRoleForDSC角色，具体操作，请参见[服务关联角色](/cn.zh-CN/角色管理/服务关联角色.md)。
+当您不再需要使用DSC服务时，可以删除DSC的服务关联角色。您可以登录[RAM控制台](https://ram.console.aliyun.com/roles)删除AliyunServiceRoleForSDDP角色，具体操作，请参见[服务关联角色](/cn.zh-CN/角色管理/服务关联角色.md)。
 
 ## 相关说明
 
