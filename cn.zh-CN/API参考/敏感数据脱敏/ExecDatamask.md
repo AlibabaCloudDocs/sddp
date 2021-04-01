@@ -19,7 +19,7 @@
 -   **dataList**：需要脱敏的数据。
 -   **ruleList** ：敏感类型ID列表，顺序和需要脱敏的数据一一对应。
 
-敏感类型ID是数字，不同的数字代表不同的敏感类型，可通过[DescribeConfigs](~~141387~~)接口获取。 |
+敏感类型ID是数字，不同的数字代表不同的敏感类型，可通过[DescribeRules](~~141389~~)接口获取。 |
 |TemplateId|Long|是|1|指定脱敏模板ID。在[数据安全中心控制台](https://yundun.console.aliyun.com/?&p=sddpnext#/sddp/dm/template)上创建模板后会生成模板ID，您可以在**数据脱敏**\>**脱敏模板**页面获取**脱敏模板ID**。
 
  -   若脱敏模板匹配类型是**字段名称**，则取**Data**中的**dataHeaderList**进行匹配。
