@@ -62,6 +62,9 @@ DSC scans all data that is stored in your OSS buckets at the first scan and char
     We recommend that you perform the following operations:
 
     1.  Check the number of sensitive objects at each risk level in an OSS bucket that has a high risk level at the earliest opportunity. In addition, check the detection rules that are most frequently hit at each risk level and the number of objects that hit each rule.
+
+        ![高度敏感的bucket](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/7748188161/p265413.png)
+
     2.  Click **File details** to view the information about the sensitive objects, such as the names, types, and sizes. Check whether the objects have data security risks.
     3.  On the **Original log** page, find the sensitive objects based on their names and view the operations that were performed on the sensitive objects from clients. If necessary, record the IP addresses of the clients from which the operations were performed and check whether suspicious users exist.
     4.  On the **Abnormal event alerts** page, view the anomalous activities based on the risk level and check whether high-risk activities exist.
