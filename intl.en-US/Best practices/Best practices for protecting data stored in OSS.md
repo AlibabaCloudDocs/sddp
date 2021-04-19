@@ -51,7 +51,7 @@ DSC scans all data that is stored in your OSS buckets at the first scan and char
 
 4.  On the OSS tab, click **Unauthorized** and select multiple OSS buckets to authorize DSC to access these OSS buckets at a time.
 
-    You can also find an OSS bucket and click **Authorization** in the Open protection column to authorize DSC to access the OSS bucket. For more information, see [Authorize SDDP to access OSS buckets](/intl.en-US/User Guide/Grant access to data assets.md).
+    You can also find an OSS bucket and click **Authorization** in the Open protection column to authorize DSC to access the OSS bucket. For more information, see [Authorize DSC to access OSS buckets](/intl.en-US/User Guide/Grant access to data assets.md).
 
     DSC starts to scan objects that are stored in your OSS buckets within 2 hours after the authorization. The time taken to scan objects in your OSS buckets depends on the total size of the objects. For more information, see the "How long does it take to scan data in my data asset after I authorize SDDP to access the data asset?" section of the [Sensitive data scan and detection](/intl.en-US/FAQ/Sensitive data scan and detection.md) topic.
 
@@ -62,9 +62,6 @@ DSC scans all data that is stored in your OSS buckets at the first scan and char
     We recommend that you perform the following operations:
 
     1.  Check the number of sensitive objects at each risk level in an OSS bucket that has a high risk level at the earliest opportunity. In addition, check the detection rules that are most frequently hit at each risk level and the number of objects that hit each rule.
-
-        ![OSS buckets that have high risk levels](../images/p183760.png)
-
     2.  Click **File details** to view the information about the sensitive objects, such as the names, types, and sizes. Check whether the objects have data security risks.
     3.  On the **Original log** page, find the sensitive objects based on their names and view the operations that were performed on the sensitive objects from clients. If necessary, record the IP addresses of the clients from which the operations were performed and check whether suspicious users exist.
     4.  On the **Abnormal event alerts** page, view the anomalous activities based on the risk level and check whether high-risk activities exist.
