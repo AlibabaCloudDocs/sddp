@@ -46,6 +46,6 @@ To rescan a data asset for sensitive data, perform the following steps:
 
     After the rescan is started, the scan task enters the **Scanning** or **Waiting** state. The percentage that is displayed in the **Scan Status** column indicates the progress of the scan task. After the rescan is complete, the scan task enters the **Complete** state.
 
-    ![Scanning](../images/p183653.png)
+    ![扫描中](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2887188161/p265401.png)
 
 
