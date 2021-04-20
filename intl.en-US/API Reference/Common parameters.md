@@ -44,13 +44,13 @@ Every response returns a unique RequestId value regardless of whether the call i
 
     ```
     <? xml version="1.0" encoding="utf-8"? > 
-        <!—Result root node-->
+        <!--Result root node-->
         <Operation name+Response>
-            <!—Return request tag-->
+            <!--Return request tag-->
             <RequestId>4C467B38-3910-447D-87BC-AC049166F216</RequestId>
-            <!—Return result data-->
+            <!--Return result data-->
         </Operation name+Response>
-    					
+                        
     ```
 
 -   JSON format
