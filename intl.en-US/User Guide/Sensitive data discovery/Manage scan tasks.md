@@ -4,7 +4,7 @@ Data Security Center \(DSC\) automatically scans the authorized data assets for 
 
 DSC allows you to manage scan tasks that scan your data stored in Object Storage Service \(OSS\), ApsaraDB RDS, DRDS, PolarDB, Tablestore, self-managed databases hosted on Elastic Compute Service \(ECS\) instances, and MaxCompute.
 
-After you authorize DSC to access specific data assets, DSC automatically creates and runs scan tasks for these data assets to detect sensitive data. By default, the **automatic scan** feature is enabled for scan tasks that are created by DSC. This feature allows DSC to run a full scan on authorized data assets and then scan the data that is newly written to or modified in these data assets at intervals of 4 hours. In addition, after you create or modify a sensitive data detection rule, DSC automatically reruns scan tasks. DSC charges you based on the size of scanned data. For more information, see [Pay-as-you-go](/intl.en-US/Pricing/Pay-as-you-go.md).
+After you authorize DSC to access specific data assets, DSC automatically creates and runs scan tasks for these data assets to detect sensitive data. By default, the **automatic scan** feature is enabled for scan tasks that are created by DSC. This feature allows DSC to run a full scan on authorized data assets and then scan the data that is newly written to or modified in these data assets at intervals of 4 hours. In addition, after you create or modify a sensitive data detection rule, DSC automatically reruns scan tasks.
 
 ## View the details of scan tasks
 
@@ -27,8 +27,6 @@ You can rerun scan tasks in the following scenarios:
 
 -   If you have not enabled the **automatic scan** feature for a scan task, the scan task is not run after it is created. You must rerun the scan task to start it.
 -   If you enable the **automatic scan** feature for a scan task, DSC automatically reruns the scan task to scan the data that is newly written to or modified in the data asset at intervals of 4 hours. You can also rerun the scan task to scan the data asset for sensitive data immediately after you modify the data in the data asset.
-
-**Note:** DSC charges you daily for the number of files that are scanned. DSC also charges you for rescans. For more information, see [Pay-as-you-go](/intl.en-US/Pricing/Pay-as-you-go.md).
 
 To rescan a data asset for sensitive data, perform the following steps:
 
