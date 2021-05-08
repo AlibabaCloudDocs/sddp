@@ -76,7 +76,7 @@ DSC scans all data that is stored in your OSS buckets at the first scan and char
 
 ## References
 
-[Pay-as-you-go](/intl.en-US/Pricing/Pay-as-you-go.md)
+[Subscription](/intl.en-US/Pricing/Subscription.md)
 
 [Overview](/intl.en-US/FAQ/Overview.md)
 
