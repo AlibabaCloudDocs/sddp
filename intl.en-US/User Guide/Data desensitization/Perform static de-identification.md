@@ -55,7 +55,7 @@ DSC supports both static and dynamic de-identification. Compared with static de-
 
 **Note:** After you turn on the switch, you can use the wildcard \(\*\) to specify multiple source files at a time. You can use the wildcard only in the file name prefix, for example, test\*.xls. SDDP applies the same de-identification rules to all the source files that are specified at a time. Make sure that the source files share the same schema. |
             |**Source file description**|The description of the source file. If you set the **File source** parameter to **OSS Bucket**, you do not need to specify this parameter.|
-            |**Separator selection**|Optional. The field delimiter. This parameter is required for CSV and TXT files. Select a field delimiter based on the file format. Valid values:             -   **Semicolon ";" \(MacOS/Linux default\)**
+            |**Separator selection**|Optional. The field delimiter. This parameter is required for CSV and TXT files. Select a field delimiter based on the file format. Valid values:             -   **Semicolon ";" \(macOS/Linux default\)**
             -   **Comma "," \(Windows default\)** |
             |**Table contains header rows**|Optional. Specifies whether the data to be de-identified includes the table header.|
 
