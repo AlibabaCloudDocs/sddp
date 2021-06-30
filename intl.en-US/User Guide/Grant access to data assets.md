@@ -371,7 +371,7 @@ DSC allows you to upload an EXCEL file to import logon information for multiple 
 
 7.  Click **OK**.
 
-    The EXCEL file is uploaded. Then, DSC synchronizes the usernames and passwords that you enter in the file to the **Username** and **Password** columns for the related databases on the **RDS**, **DRDS**, and **PolarDB** tabs. The following figure shows that the usernames and passwords are imported. You can authorize DSC to access these databases on the Cloud hosting page without the need to manually enter the usernames and passwords for accessing the databases.
+    The EXCEL file is uploaded. Then, DSC synchronizes the usernames and passwords that you enter in the file to the **Username** and **Password** columns for the related databases on the **RDS**, **DRDS**, and **PolarDB** tabs. You can authorize DSC to access these databases on the Cloud hosting page without the need to manually enter the usernames and passwords for accessing the databases.
 
 
 ## Troubleshoot an authorization failure
