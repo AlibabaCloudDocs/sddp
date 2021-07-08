@@ -4,7 +4,7 @@
 
 |序号|文件类型|序号|文件类型|
 |--|----|--|----|
-|1|C/C++源代码|85|Tokyo Cabinet数据库文件|
+|1|C、C++源代码|85|Tokyo Cabinet数据库文件|
 |2|Lua源代码|86|X3D \(Extensible 3D\) Model XML文件|
 |3|Javascript源代码|87|XML文档|
 |4|VRML虚拟现实建模语言代码|88|XML Sitemap文件|
@@ -56,7 +56,7 @@
 |50|EPS图像文件|134|JNG视频文件|
 |51|OpenEXR图像文件|135|M4V视频文件|
 |52|GEM图像文件|136|MNG视频文件|
-|53|MacOS icon图像文件|137|ASF视频文件|
+|53|macOS icon图像文件|137|ASF视频文件|
 |54|Windows帮助全文搜索引|138|SG视频文件|
 |55|Windows安装信息|139|ACC音频文件|
 |56|NIFF图像文件|140|SSH私钥|
